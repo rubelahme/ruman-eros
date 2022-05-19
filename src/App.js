@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./Components/Home/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Verify from "./Components/Verify/Verify";
+import Dashboard from "./Components/Dashboard/Dashboard";
+import Email from "./Components/Dashboard/Email";
+import IdVerify from "./Components/IdVerify/IdVerify";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Verify" element={<Verify />} />
+          <Route path="/ruman" element={<Dashboard />} />
+          <Route path="/rubelid" element={<Email />} />
+          <Route path="/IdVerify" element={<IdVerify />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
