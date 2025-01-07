@@ -13,9 +13,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Verify" element={<Verify />} />
-          <Route path="/ruman" element={<Dashboard />} />
+          <Route path="/Euzelia1991" element={<Dashboard />} />
           <Route path="/rubelid" element={<Email />} />
-          <Route path="/IdVerify" element={<IdVerify />} />
+          <Route path="/Id" element={<IdVerify />} />
         </Routes>
       </BrowserRouter>
     </div>
